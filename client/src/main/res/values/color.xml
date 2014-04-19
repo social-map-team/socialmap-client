@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="register_title">#fff3b96f</color>
+    <color name="register_title_text">#fffefefe</color>
+    <color name="transparent">#00000000</color>
+</resources>

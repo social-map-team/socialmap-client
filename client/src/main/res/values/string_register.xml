@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_btn_verify_text">验证电话号码</string>
+    <string name="register_title">注册新用户</string>
+    <string name="register_btn_continue_text">继续</string>
+
+    <string name="error_register_phone_number_exists">该电话号码已被注册</string>
+    <string name="error_register_captcha_wrong">验证码有误</string>
+    <string name="error_register_password_not_equal">两次输入的密码不相同</string>
+    <string name="register_associate_contacts_hint">是否关联本机的联系人</string>
+    <string name="register_btn_no_text">否</string>
+    <string name="register_btn_yes_text">是</string>
+    <string name="register_password_hint">请为您的账号设置一个密码</string>
+    <string name="register_password_again_hint">请再输入一遍密码以确认</string>
+    <string name="register_btn_finish_text">完成注册</string>
+    <string name="register_btn_details_text">继续设置用户详细信息</string>
+</resources>

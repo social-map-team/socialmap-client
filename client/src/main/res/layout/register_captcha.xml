@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_selector"
+            android:background="#00000000"
+            android:id="@+id/back_btn_captcha"
+            />
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="验证码"
+            android:textSize="23sp"
+            android:textColor="@color/register_title_text"/>
+        <ImageButton
+            android:id="@+id/help_captcha"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/question_selector"
+            android:background="@color/transparent"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_captcha_hint"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/register_et_captcha"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_btn_continue"
+        android:text="@string/register_btn_continue_text"/>
+
+</LinearLayout>
