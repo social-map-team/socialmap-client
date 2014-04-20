@@ -3,5 +3,84 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/background_others">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:text="好友姓名"/>
+        <!--返回按钮返回到好友列表 -->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.4"
+            android:src="@drawable/btn_selector"
+            android:background="#00000000"
+            android:id="@+id/back_btn_my_friends"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/register_title">
+        <!--ImageView里面放用户头像，圆形，位置-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@drawable/head_photo"
+            android:layout_gravity="top"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"/>
+
+    </LinearLayout>
+    <!--或者用actionbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--好友信息显示，备注，生日，电话，性别，情感-->
+
+        <!--邀请按钮（邀请进入队伍）-->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <!--请求位置按钮-->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <!--发消息按钮-->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <!--权限按钮-->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
 
 </LinearLayout>

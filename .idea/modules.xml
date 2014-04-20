@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Socialmap.iml" filepath="$PROJECT_DIR$/Socialmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/socialmap-client.iml" filepath="$PROJECT_DIR$/socialmap-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/socialmap-client.iml" filepath="$PROJECT_DIR$/socialmap-client.iml" />
     </modules>
   </component>

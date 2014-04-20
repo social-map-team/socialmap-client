@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--这个界面将会显示一下新消息
+   1.和好友的对话
+   2.好友的位置请求提示
+   3.好友断开位置分享提示
+   4.队伍解散提示
+   5.队伍邀请提示
+   6.队伍内对话提示
+   7.副本信息提示
 
+   采用列表的方式显示以上7个内容，用户点击列表进行相关操作-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+        <!--返回到地图-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_selector"
+            android:background="#00000000"
+            android:id="@+id/back_btn_new_message"
+            />
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="新消息"
+            android:textSize="23sp"
+            android:textColor="@color/register_title_text"/>
+        <ImageButton
+            android:id="@+id/help_phone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            />
 
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/friend_listView" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

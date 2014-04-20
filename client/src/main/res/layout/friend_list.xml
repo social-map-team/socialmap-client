@@ -3,5 +3,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+        <!--返回地图界面-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_selector"
+            android:background="#00000000"
+            android:id="@+id/back_btn_friend_list"
+            />
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="好友列表"
+            android:textSize="23sp"
+            android:textColor="@color/register_title_text"/>
+        <!--好友添加按钮，图标后期会修改-->
+        <ImageButton
+            android:id="@+id/help_phone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/question_selector"
+            android:background="@color/transparent"
+            />
+
+    </LinearLayout>
+    <!--好友列表-->
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+             <!--搜索栏-->
+             <SearchView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/searchView"
+                 />
+             <!--好友,点击切换到my_friends-->
+             <ListView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/friend_listView" />
+             <!--显示好友头像-->
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+             <!--显示好友姓名-->
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+             </LinearLayout>
+
+        </ScrollView>
 
 </LinearLayout>

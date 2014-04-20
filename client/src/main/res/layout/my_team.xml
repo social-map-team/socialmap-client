@@ -3,5 +3,69 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_bg">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/btn_selector"
+            android:background="#00000000"
+            android:id="@+id/back_btn_team"
+            />
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="我的队伍"
+            android:textSize="23sp"
+            android:textColor="@color/register_title_text"/>
+        <!--队伍建立按钮  图标后期修改-->
+        <ImageButton
+            android:id="@+id/help_phone"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/question_selector"
+            android:background="@color/transparent"
+            />
 
+    </LinearLayout>
+    <!--队伍列表-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--搜索栏-->
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchView"
+                />
+            <!--队伍,点击切换到teams-->
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/friend_listView" />
+            <!--显示队长头像-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--显示队伍信息 目的地 时间-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX的队伍"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
