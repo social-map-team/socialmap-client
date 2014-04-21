@@ -55,6 +55,24 @@
             android:name=".help.HelpActivity"
             android:label="@string/app_name" />
         <activity
+            android:name=".MyInformationActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".MyFriendsActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".MyTeamActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".FriendList"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".BoxActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".NewMessageActivity"
+            android:label="@string/app_name"/>
+        <activity
             android:name=".SettingsActivity"
             android:label="@string/activity_settings_label" />
         <activity android:name=".login.LoginActivity">

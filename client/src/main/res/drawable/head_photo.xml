@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="oval">
-            <stroke android:width="2dp"
+<!--空心圆角矩形  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
 
-                android:color="@color/head_photo_white"/>
-        </shape>
-    </item>
-</layer-list>
+    <corners android:radius="110dp" /><!-- 圆角半径 -->
+
+    <stroke
+        android:width="8dp"
+        android:color="#0000ff" /><!--矩形的边线  -->
+
+
+    <gradient
+        android:endColor="#fff3b96f"
+        android:startColor="#fff3b96f" /><!-- 矩形的内部颜色，这里设置成白色，即空心 -->
+
+</shape>

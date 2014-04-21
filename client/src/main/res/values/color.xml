@@ -4,5 +4,5 @@
     <color name="register_title_text">#fffefefe</color>
     <color name="transparent">#00000000</color>
     <color name="background_others">#fff3b96f</color>
-    <color name="head_photo_white">#fffefefe</color>
+    <color name="head_photo_white">#00f</color>
 </resources>

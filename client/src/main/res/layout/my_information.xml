@@ -38,46 +38,43 @@
             />
 
     </LinearLayout>
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:background="@color/register_title">
+        android:layout_height="220dp"
+        android:background="#fff3b96f">
         <!--ImageView里面放用户头像，圆形，位置-->
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"/>
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_gravity="bottom"
+          android:background="#ffff"/>
         <ImageView
             android:layout_width="220dp"
             android:layout_height="220dp"
             android:background="@drawable/head_photo"
-            android:layout_gravity="top"
+            android:layout_gravity="center"
             />
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"/>
 
-    </LinearLayout>
-    <!--放3个按钮  或者用actionbar-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
+    <!--放3个按钮  我现在都把他们放到下面了-->
+
         <!--个人信息按钮-->
        <ImageButton
            android:layout_width="30dp"
-           android:layout_height="30dp" />
+           android:layout_height="30dp"
+           android:layout_gravity="bottom"/>
         <!--设置按钮-->
         <ImageButton
             android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"/>
         <!--位置管理按钮-->
         <ImageButton
             android:layout_width="30dp"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"/>
 
-        </RelativeLayout>
+      </FrameLayout>
 
 </LinearLayout>
