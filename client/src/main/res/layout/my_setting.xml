@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg">
+    <!--返回到我的信息界面-->
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/btn_selector"
+                android:background="#00000000"
+                android:id="@+id/back_btn_my_setting" />
+
+            <TextView
+                android:layout_width="225dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="设置"
+                android:textSize="23sp"
+                android:textColor="@color/register_title_text" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+
+                />
+
+        </LinearLayout>
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="10dp"
+              android:background="#fff0f0f2" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="15"
+            android:paddingLeft="15dp"
+            android:paddingTop="14dp"
+            android:text="账号与安全"
+            android:textSize="16sp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/my_setting_a_1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_my_setting_a"
+            android:background="#00000000"/>
+        </LinearLayout>
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="15dp"
+              android:background="#fff0f0f2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="15"
+                android:paddingLeft="15dp"
+                android:paddingTop="14dp"
+                android:text="新消息通知"
+                android:textSize="16sp"
+                android:background="#00000000" />
+
+            <ImageView
+                android:id="@+id/my_setting_a_2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_my_setting_a"
+                android:background="#00000000"/>
+
+            </LinearLayout>
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="#ffbbbbbd" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="15"
+                  android:paddingLeft="15dp"
+                  android:paddingTop="14dp"
+                  android:text="隐私"
+                  android:textSize="16sp"
+                  android:background="#00000000" />
+
+              <ImageView
+                  android:id="@+id/my_setting_a_3"
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="2"
+                  android:src="@drawable/ic_my_setting_a"
+                  android:background="#00000000"/>
+              </LinearLayout>
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="#ffbbbbbd" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="15"
+                  android:paddingLeft="15dp"
+                  android:paddingTop="14dp"
+                  android:text="个性设置"
+                  android:textSize="16sp"
+                  android:background="#00000000" />
+
+              <ImageView
+                  android:id="@+id/my_setting_a_4"
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="2"
+                  android:src="@drawable/ic_my_setting_a"
+                  android:background="#00000000"/>
+              </LinearLayout>
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="15dp"
+              android:background="#fff0f0f2" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="15"
+                  android:paddingLeft="15dp"
+                  android:paddingTop="14dp"
+                  android:text="关于SocialMap"
+                  android:textSize="16sp"
+                  android:background="#00000000" />
+
+              <ImageView
+                  android:id="@+id/my_setting_a_5"
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="2"
+                  android:src="@drawable/ic_my_setting_a"
+                  android:background="#00000000"/>
+              </LinearLayout>
+          <ImageView
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:background="#fff0f0f2" />
+      </LinearLayout>
+</LinearLayout>
+
