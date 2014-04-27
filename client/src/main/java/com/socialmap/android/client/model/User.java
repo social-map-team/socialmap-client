@@ -1,4 +1,4 @@
-package com.socialmap.android.client;
+package com.socialmap.android.client.model;
 
 /**
  * Created by yy on 4/19/14.

@@ -37,7 +37,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyCKjGxa0XgHrI0pYxu5RQ4B5tEpSRNZG7k" />
@@ -45,9 +45,16 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <!-- Activities registration here -->
         <activity
-            android:name="com.socialmap.android.client.MainActivity"
-            android:label="@string/app_name" />
+            android:name=".main.MainActivity"
+            android:label="@string/activity_main_label"
+            android:logo="@drawable/ic_main_activity_logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.socialmap.android.client.LocationActivity"
             android:label="@string/app_name" />
@@ -56,35 +63,32 @@
             android:label="@string/app_name" />
         <activity
             android:name=".MyInformationActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
         <activity
             android:name=".MyFriendsActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
         <activity
             android:name=".MyTeamActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
         <activity
-            android:name=".FriendList"
-            android:label="@string/app_name"/>
+            android:name=".friend.FriendActivity"
+            android:label="@string/activity_friend_label" />
         <activity
-            android:name=".BoxActivity"
-            android:label="@string/app_name"/>
+            android:name=".box.BoxActivity"
+            android:label="@string/app_name" />
         <activity
             android:name=".NewMessageActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
         <activity
             android:name=".MySetting"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name" />
         <activity
             android:name=".SettingsActivity"
             android:label="@string/activity_settings_label" />
-        <activity android:name=".login.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".login.LoginActivity" />
         <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".friend.FriendDetailsActivity"
+            android:logo="@drawable/ic_back"/>
     </application>
 
 
