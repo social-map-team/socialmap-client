@@ -23,15 +23,15 @@ public class MainFragment extends Fragment {
         GoogleMap map = ((MapFragment) getFragmentManager()
                 .findFragmentById(R.id.map)).getMap();
 
-        LatLng sydney = new LatLng(33.867, 251.206);
+        LatLng beijing = new LatLng(39.9073, 116.3911);
 
         map.setMyLocationEnabled(true);
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 13));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(beijing, 16));
 
         map.addMarker(new MarkerOptions()
-                .title("Sydney")
-                .snippet("The most populous city in Australia.")
-                .position(sydney));
+                .title("北京")
+                .snippet("中华人民共和国的首都")
+                .position(beijing));
     }
 
     @Override

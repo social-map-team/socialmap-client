@@ -13,9 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.socialmap.android.client.MainActivity;
+import com.socialmap.android.client.main.MainActivity;
 import com.socialmap.android.client.R;
-import com.socialmap.android.client.main.MainFragment;
 import com.socialmap.android.client.register.RegisterActivity;
 import com.socialmap.android.client.util.HttpUtil;
 

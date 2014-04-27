@@ -2,13 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.socialmap.android.client.MainActivity"
+    tools:context="com.socialmap.android.client.main.MainActivity"
     android:id="@+id/main_container">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/main_text" />
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fake_map_4"
+        android:scaleType="center"
+        android:contentDescription="This is a fake map" />
+    <ImageButton
+        android:layout_centerInParent="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:id="@+id/fake_place_1"
+        android:src="@drawable/fake_position"
+        android:background="@null"
+        />
 
 </RelativeLayout>

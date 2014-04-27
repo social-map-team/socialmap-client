@@ -1,32 +1,40 @@
-package com.socialmap.android.client;
+package com.socialmap.android.client.main;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
+import com.socialmap.android.client.box.BoxActivity;
+import com.socialmap.android.client.friend.FriendActivity;
+import com.socialmap.android.client.R;
+import com.socialmap.android.client.SettingsActivity;
+import com.socialmap.android.client.model.User;
 import com.socialmap.android.client.util.HttpUtil;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends Activity{
+public class MainActivity extends Activity {
 
     private User user;
 
-    private String getUserLocation(String username){
-        String str ="";
+    private void init() {
+    }
+
+    private String getUserLocation(String username) {
+        String str = "";
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("username", username));
         JSONObject result = HttpUtil.post(HttpUtil.SERVER_URL + "location", params);
@@ -44,7 +52,19 @@ public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        init();
+        ImageButton place1 = (ImageButton) findViewById(R.id.fake_place_1);
+        place1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BoxActivity.class);
+                startActivity(intent);
+            }
+        });
+        //getFragmentManager().beginTransaction().add(R.id.main_container, new MainFragment(), "map").commit();
+        /*
         user = new User();
         user.setName(getIntent().getStringExtra("username"));
         TextView tv = (TextView)findViewById(R.id.main_text);
@@ -55,8 +75,9 @@ public class MainActivity extends Activity{
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("bug", "This is a bug"));
         JSONObject result = HttpUtil.post(HttpUtil.SERVER_URL + "all-users", params);
+        */
         //TODO 不知道这里result为什么是空值，要改进Android的Http访问机制
-       /*
+        /*
         Toast.makeText(this,result.toString(),Toast.LENGTH_LONG).show();
         try {
             if (result == null) throw new JSONException("result json is null");
@@ -69,13 +90,12 @@ public class MainActivity extends Activity{
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        tv.setText(str);*/
+        tv.setText(str);
+        */
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -87,7 +107,11 @@ public class MainActivity extends Activity{
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            Intent intent = new Intent(this,SettingsActivity.class);
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (id == R.id.action_friend) {
+            Intent intent = new Intent(this, FriendActivity.class);
             startActivity(intent);
             return true;
         }

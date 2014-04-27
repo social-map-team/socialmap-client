@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Socialmap</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!-- Application -->
+    <string name="app_name">Social Map</string>
+
+    <!-- Actions -->
+    <string name="action_settings">设置</string>
+    <string name="action_login">登录</string>
+    <string name="action_friend">我的好友</string>
+    <string name="action_team">我的队伍</string>
+    <string name="action_share_location">位置共享</string>
+    <string name="action_logout">注销</string>
+    <string name="action_account_info">账户信息</string>
+    <string name="action_message">消息</string>
+    <string name="action_add_friend">添加好友</string>
+
+    <!-- Main Activity -->
+    <string name="activity_main_label">社交地图</string>
+
+    <!-- Login Activity -->
+    <string name="login_title">登录</string>
+    <string name="login_sign_in">登录</string>
+    <string name="login_register">注册新用户</string>
+
+    <!-- Register Activity -->
     <string name="register_captcha_hint">请输入验证码</string>
+    <string name="register_btn_verify_text">验证电话号码</string>
+    <string name="register_title">注册新用户</string>
+    <string name="register_btn_continue_text">继续</string>
+
+    <string name="error_register_phone_number_exists">该电话号码已被注册</string>
+    <string name="error_register_captcha_wrong">验证码有误</string>
+    <string name="error_register_password_not_equal">两次输入的密码不相同</string>
+    <string name="register_associate_contacts_hint">是否关联本机的联系人</string>
+    <string name="register_btn_no_text">否</string>
+    <string name="register_btn_yes_text">是</string>
+    <string name="register_password_hint">请为您的账号设置一个密码</string>
+    <string name="register_password_again_hint">请再输入一遍密码以确认</string>
+    <string name="register_btn_finish_text">完成注册</string>
+    <string name="register_btn_details_text">继续设置用户详细信息</string>
+
+    <!-- Help Activity -->
     <string name="help_captcha_1">如果您没有收到验证短信，可能由以下原因：\n\n1.您所填写的手机号码有误。\n2.您所使用的网络不稳定，导致接受的短信发生延迟。\n\n如果您等待十分钟以上，仍未收到验证短信，请您在重新发送验证码中发送您的手机号码。\n\n如果重新发送验证码后仍未收到，请您通过下方的《问题报告》联系我们。</string>
     <string name="help_captcha_2">验证码为4位数字，请确认输入是否正确。\n若您正确输入短信中的验证码后，仍显示错误信息，请发送问题报告，与我们联系。
     </string><string name="help_server_1">为帮助用户轻松找到已开始使用SocialMap的好友，用户若进行如下操作，可将通讯录中登录的电话号码和邮箱地址上传至服务器。\n\n1. 新账号注册时，用户是否将通讯录资料上传至服务器的对话框中，选择了［使用通讯录］。\n2. 开启［设定＞自动添加好友］中的［自动添加好友］功能。或者点击［更新］键，在弹出是否将通讯录资料上传至服务器的对话框中选择［确认］。\n\n通讯录上传后，若用户双方互相持有对方的电话号码，将被自动互相加为［好友］。\n若单方持有电话号码的情况，持有电话号码的一方，系统将自动把对方加至［好友］列表。而没有电话号码的一方，对方会显示于［您可能认识的人？］中。\n您的电话号码、通讯录中的电话号码、手机邮箱地址等信息将不会泄露给其他用户。如下文所述，我们会尽全力保障您的隐私权益，请您放心使用服务。\n\n1. 注册使用SocialMap时，我们会请您事先确认关于使用通讯录的服务条款及隐私政策。\n2. 为帮助您更快地找到好友，通讯录中的电话号码、手机邮箱地址将上传至服务器。这时，通讯录中的电话号码、手机邮箱地址都将被加密，以安全的状态储存于服务器中。\n3. 系统仅会简单对比加密后的资料，确认互相是否持有对方的电话号码或者邮箱地址。\n\n如果您想了解更多隐私政策的内容，请点击以下网址。\n www.xxx.com</string>
     <string name="help_server_2">SocialMap支持的使用环境如下：\n- iPhone (操作系统 4.0以上)\n- Android（Android操作系统 2.1以上）\n- Windows Phone (Windows Phone 操作系统 7.5以上）\n※目前，以下机型不能使用服务\n不支持的机型及终端：\n- PHS终端</string>
     <string name="help_server_3">1.您可以通过位置共享功能获得您与好友的位置，显示在地图上面，并且您还可以点击好友头像随时进行互动。\n2.通过组队模式，您可以建立一支队伍，并邀请您好友列表里面的好友进入。所有小队成员的位置都将显示在地图上面，并且小队建立者可以随时修改队伍目的地等相关信息。当建立小队后，队伍内的成员还可以通过队伍的聊天群进行交流。\n3.SocialMap为您提供了独特的旅游模式，您可以通过旅游模式随时查看您的位置和导游的位置，除此之外，您还可以与导游进行互动、查阅旅游路线、呼叫救助、向您的旅行社进行联系等功能。\n4.在副本模式里面，我们为您提供了多种多样的副本应用供您使用，为您的生活提供便利。更多的内容请您登录：\n www.xxxx.com进行浏览。</string>
-    <string name="activity_settings_label">设置</string>
 
+    <!-- Friend Activity -->
+    <string name="activity_friend_label">好友列表</string>
+
+    <!-- Settings -->
+    <string name="activity_settings_label">设置</string>
     <string-array name="updateInterval">
         <item name="1000">Every 1 second</item>
         <item name="5000">Every 5 seconds</item>

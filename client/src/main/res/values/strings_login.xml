@@ -1,6 +1,0 @@
-<resources>
-    <string name="login_title">登录</string>
-    <string name="login_sign_in">登录</string>
-    <string name="login_register">注册新用户</string>
-
-</resources>
