@@ -2,6 +2,7 @@ package com.socialmap.android.client.box;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.socialmap.android.client.R;
+import com.socialmap.android.client.box.travel.TravelActivity;
 import com.socialmap.android.client.model.Box;
 import com.socialmap.android.client.model.Friend;
 
@@ -33,25 +35,9 @@ public class BoxActivity extends Activity {
         setContentView(R.layout.activity_box);
         GridView grid = (GridView)findViewById(R.id.box_grid);
         final List<Box> boxes = new ArrayList<Box>();
-        Box a = new Box();
-        a.setName("上海大学");
-        Box b = new Box();
-        b.setName("超级鸡车");
-        Box c = new Box();
-        c.setName("上海市政府");
         Box d = new Box();
-        d.setName("旅行社");
-        boxes.add(a);
-        boxes.add(b);
-        boxes.add(c);
-        boxes.add(d);
-        boxes.add(a);
-        boxes.add(b);
-        boxes.add(c);
-        boxes.add(d);
-        boxes.add(a);
-        boxes.add(b);
-        boxes.add(c);
+        d.setName("旅行");
+        d.setIntent(new Intent(this, TravelActivity.class));
         boxes.add(d);
         MyAdapter adapter = new MyAdapter(this,boxes);
         grid.setAdapter(adapter);
@@ -59,6 +45,7 @@ public class BoxActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(view.getContext(),position+" clicked",Toast.LENGTH_LONG).show();
+                startActivity(boxes.get(position).getIntent());
             }
         });
     }

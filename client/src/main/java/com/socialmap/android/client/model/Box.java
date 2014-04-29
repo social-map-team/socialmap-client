@@ -1,5 +1,6 @@
 package com.socialmap.android.client.model;
 
+import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -10,9 +11,18 @@ public class Box implements Parcelable {
     private long id;
     private String name;
     private String iconPath;
+    private Intent intent;
 
     public Box(){
 
+    }
+
+    public Intent getIntent() {
+        return intent;
+    }
+
+    public void setIntent(Intent intent) {
+        this.intent = intent;
     }
 
     public String getName() {
@@ -44,6 +54,7 @@ public class Box implements Parcelable {
         this.id = in.readLong();
         this.name = in.readString();
         this.iconPath = in.readString();
+        this.intent = (Intent) in.readValue(Intent.class.getClassLoader());
     }
 
     @Override
@@ -56,6 +67,7 @@ public class Box implements Parcelable {
         dest.writeLong(id);
         dest.writeString(name);
         dest.writeString(iconPath);
+        dest.writeValue(intent);
     }
 
     public static final Parcelable.Creator<Box> CREATOR

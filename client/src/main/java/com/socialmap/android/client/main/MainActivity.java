@@ -16,6 +16,7 @@ import com.socialmap.android.client.R;
 import com.socialmap.android.client.SettingsActivity;
 import com.socialmap.android.client.model.User;
 import com.socialmap.android.client.util.HttpUtil;
+import com.socialmap.android.client.view.FanButton;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -52,7 +53,6 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
         init();
         ImageButton place1 = (ImageButton) findViewById(R.id.fake_place_1);

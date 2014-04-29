@@ -89,6 +89,10 @@
         <activity android:name=".register.RegisterActivity" />
         <activity android:name=".friend.FriendDetailsActivity"
             android:logo="@drawable/ic_back"/>
+        <activity android:name=".box.travel.TravelActivity"/>
+        <activity android:name=".box.travel.TravelMainActivity"/>
+        <activity android:name=".box.travel.TravelScheduleActivity"/>
+        <activity android:name=".box.travel.TravelInfoActivity"/>
     </application>
 
 

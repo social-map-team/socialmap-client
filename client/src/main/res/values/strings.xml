@@ -67,4 +67,44 @@
         <item name="60000">60000</item>
         <item name="300000">300000</item>
     </string-array>
+
+    <string name="identity_prompt">请选择您的身份</string>
+    <string-array name="identity_arrays">
+        <item>游客</item>
+        <item>导游</item>
+    </string-array>
+    <string-array name="travel_agency_arrays">
+        <item>旅行社A</item>
+        <item>旅行社B</item>
+        <item>旅行社C</item>
+        <item>旅行社D</item>
+        <item>旅行社E</item>
+        <item>旅行社F</item>
+    </string-array>
+    <string-array name="travel_schedule_arrays">
+        <item>第一天</item>
+        <item>第二天</item>
+        <item>第三天</item>
+        <item>第四天</item>
+        <item>第五天</item>
+        <item>第六天</item>
+        <item>第七天</item>
+    </string-array>
+    <string-array name="travel_schedule_day1_arrays">
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+        <item>8:00AM - 10:AM XXX</item>
+    </string-array>
+    <string-array name="travel_info_entries">
+        <item>个人信息</item>
+        <item>团队信息</item>
+    </string-array>
 </resources>
