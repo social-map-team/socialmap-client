@@ -6,15 +6,22 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="70dp"
-        android:layout_height="match_parent">
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="#ff52cafb">
+        <!--白圈的大小在listview里面如何调整,字体大小、
+        天数在白圈正中间,有没有不用padding的办法-->
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/avatar_day"
             android:entries="@array/travel_schedule_arrays">
         </ListView>
     </LinearLayout>
-
+<!--时间不固定，从服务器获取,
+详见word《2014.4.29关于旅行修改1》-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
