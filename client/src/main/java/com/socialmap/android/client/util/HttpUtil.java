@@ -2,6 +2,8 @@ package com.socialmap.android.client.util;
 
 import android.os.AsyncTask;
 
+import com.socialmap.android.client.model.Result;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -27,6 +29,26 @@ public class HttpUtil {
     public static final String SERVER_URL = "http://192.168.1.106:8080/";
     public static final HttpClient client = new DefaultHttpClient();
 
+    /**
+     *
+     * @param url
+     * 比如"/login","/register"
+     * @param params
+     * 比如 username = yy , password = 123456
+     * @return
+     */
+    public static Object post(String url, List<NameValuePair> params, Class resultClass){
+        //TODO http的post方法，要使用一个新的线程，可以使用AsyncTask, 将JSON转化为resultClass的实例
+        return null;
+    }
+
+
+
+    public static Object get(String url, List<NameValuePair> params, Class resultClass){
+        //TODO http的get方法，要使用一个新的线程，可以使用AsyncTask
+        return null;
+    }
+
     private static class PostTask extends AsyncTask<HttpPost, Void, JSONObject> {
         protected JSONObject doInBackground(HttpPost... posts) {
             try {
@@ -50,7 +72,7 @@ public class HttpUtil {
         }
     }
 
-    public static JSONObject post(String url, List<NameValuePair> params) {
+    /*public static JSONObject post(String url, List<NameValuePair> params) {
         HttpPost httpPost = new HttpPost(url);
         try {
             httpPost.setEntity(new UrlEncodedFormEntity(params));
@@ -63,5 +85,5 @@ public class HttpUtil {
             e.printStackTrace();
         }
         return null;
-    }
+    }*/
 }
